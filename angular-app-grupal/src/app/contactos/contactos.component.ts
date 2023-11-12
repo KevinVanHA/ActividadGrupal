@@ -5,6 +5,20 @@ import { Component } from '@angular/core';
   templateUrl: './contactos.component.html',
   styleUrls: ['./contactos.component.css']
 })
-export class ContactosComponent {
 
+export class ContactosComponent {
+  persona = {
+    nombre: '',
+    apellido: '',
+    telefono: '',
+    correo: '',
+    direccion: '',
+    comentario: 'Yo, '
+  };
+
+
+  Contactar() {
+    alert('Gracias ' + this.persona.nombre + ' pronto nos contactaremos contigo.');
+    console.log(this.persona);
+  }
 }

@@ -6,6 +6,35 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactosComponent } from './contactos/contactos.component';
+import { PagenofoundComponent } from './pagenofound/pagenofound.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+const routes: Routes = [{
+  path: 'inicio',
+  component: InicioComponent
+},
+{
+  path: 'nosotros',
+  component: NosotrosComponent
+},
+{
+  path: 'servicios',
+  component: ServiciosComponent
+},
+{
+  path: 'blog',
+  component: BlogComponent
+},
+{
+  path: 'contactos',
+  component: ContactosComponent
+},
+{
+  path: '**',
+  component: PagenofoundComponent
+}
+
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,10 +42,14 @@ import { ContactosComponent } from './contactos/contactos.component';
     NosotrosComponent,
     ServiciosComponent,
     BlogComponent,
-    ContactosComponent
+    ContactosComponent,
+    PagenofoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

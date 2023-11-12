@@ -1,4 +1,19 @@
-<app-inicio></app-inicio>
-<button class="btn btn-primary">
-  Aceptar
-</button>
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" routerLink="inicio">Odontologia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active text-center" aria-current="page" routerLink="/inicio">Inicio</a>
+        <a class="nav-link active center" routerLink="/nosotros">Nosotros</a>
+        <a class="nav-link active" routerLink="/servicios">Servicios</a>
+        <a class="nav-link active" routerLink="/blog">Blog</a>
+        <a class="nav-link active" routerLink="/contactos">Contactos</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
