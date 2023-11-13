@@ -1,8 +1,8 @@
 <div class="container">
-    <h2>Blog de Ortodoncia</h2>
+    <h3 class="text-primary">Blog de Ortodoncia</h3>
     <div *ngFor="let post of blogPosts">
-        <h3>{{ post.title }}</h3>
+        <h4 class="text-primary">{{ post.title }}</h4>
         <p>{{ post.content }}</p>
-        <a [routerLink]="['/blog', post.id]">Leer más</a>
+        <a href="/blog">Leer más</a>
     </div>
 </div>

@@ -1,6 +1,6 @@
 # Actividad Grupal - Desarrollo Web con Frameworks
-## Contribucion
-*Kevin Van Haesendonck
-*Jenny Suarez
-*Edwin Fabian Sisa 
+## contribución 
+1. Kevin Van Haesendonck
+2. Jenny Suarez
+3. Edwin Fabian Sisa 
 
