@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Vue</title>
+  <style>
+    nav a.router-link-exact-active {
+      color: #42b983;
+    }
+
+    .bg-dark,
+    .navbar-dark,
+    .bg-primary,
+    .btn-primary {
+      background-color: #2dadd0 !important;
+    }
+
+    .text-primary {
+      color: #2dadd0 !important;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div class="container">
     <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
