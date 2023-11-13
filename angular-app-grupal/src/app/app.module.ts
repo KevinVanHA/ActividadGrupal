@@ -9,8 +9,9 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { PagenofoundComponent } from './pagenofound/pagenofound.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 const routes: Routes = [{
-  path: 'inicio',
+  path: '',
   component: InicioComponent
 },
 {
@@ -43,7 +44,8 @@ const routes: Routes = [{
     ServiciosComponent,
     BlogComponent,
     ContactosComponent,
-    PagenofoundComponent
+    PagenofoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

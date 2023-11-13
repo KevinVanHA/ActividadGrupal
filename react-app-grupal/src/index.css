@@ -1,0 +1,15 @@
+ .bg-dark,
+ .navbar-dark,
+ .bg-primary,
+ .btn-primary,
+ .text-bg-primary {
+     background-color: #2dadd0 !important;
+ }
+
+ .text-primary {
+     color: #2dadd0 !important;
+ }
+
+ .text-justify {
+     text-align: justify;
+ }
