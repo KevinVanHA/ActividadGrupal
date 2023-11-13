@@ -19,4 +19,3 @@
   </nav>
   <router-view />
 </template>
-

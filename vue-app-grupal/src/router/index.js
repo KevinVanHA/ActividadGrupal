@@ -1,42 +1,42 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import InicioView from '../views/InicioView.vue'
-import BlogView from '../views/BlogView.vue'
-import ContactosView from '../views/ContactosView.vue'
-import NosotrosView from '../views/NosotrosView.vue'
-import PageNoFoundView from '../views/PageNoFoundView.vue'
-import ServiciosView from '../views/ServiciosView.vue'
+import InicioComponent from '../components/Inicio.vue'
+import BlogComponent from '../components/Blog.vue'
+import ContactosComponent from '../components/Contactos.vue'
+import NosotrosComponent from '../components/Nosotros.vue'
+import PageNoFoundComponent from '../components/PageNoFound.vue'
+import ServiciosComponent from '../components/Servicios.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 
 const routes = [
   {
     path: '/',
     name: 'inicio',
-    component: InicioView
+    component: InicioComponent
   },
   {
     path: '/blog',
     name: 'blog',
-    component: BlogView
+    component: BlogComponent
   },
   {
     path: '/contactos',
     name: 'contactos',
-    component: ContactosView
+    component: ContactosComponent
   },
   {
     path: '/nosotros',
     name: 'nosotros',
-    component: NosotrosView
+    component: NosotrosComponent
   },
   {
     path: '/servicios',
     name: 'servicios',
-    component: ServiciosView
+    component: ServiciosComponent
   },
   {
     path: '/:catchAll(.*)',
     name: 'nofound',
-    component: PageNoFoundView
+    component: PageNoFoundComponent
   }
 ]
 
